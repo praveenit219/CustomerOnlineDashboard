@@ -1,0 +1,9 @@
+# image not found? login using "docker login --username=abc --password=abc https://registry.domain.de"
+services: 
+  pheonix-customeronlinedashboard: 
+    container_name: pheonix-customeronlinedashboard
+    image: "praveenit219/pheonix-customeronlinedashboard:latest"
+    network_mode: host
+    ports: 
+      - "10857:10857"
+version: "3"
